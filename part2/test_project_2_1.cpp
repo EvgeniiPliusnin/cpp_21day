@@ -2,6 +2,6 @@
 
 int main(int argc, char const *argv[])
 {
-    std::Cout << "is there a bag here? ";
+    std::cout << "is there a bag here? ";
     return 0;
 }
