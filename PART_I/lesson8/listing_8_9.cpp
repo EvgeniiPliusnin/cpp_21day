@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
         cout << *(pointer_to_int++) << endl;
     }    
 
-    // return pointer to intitial position:
+    // return pointer to intitial position:kk
     pointer_to_int -= num_integers;
 
     // release allocated memory
