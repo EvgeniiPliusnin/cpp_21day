@@ -31,6 +31,7 @@ int main(int argc, char const *argv[])
 {
     Tuna lunch;
     lunch.swim();
+    lunch.Fish::swim();
 
     return 0;
 }
