@@ -14,5 +14,7 @@ int main(int argc, char const *argv[])
     constexpr Human some_person(15);
     const int his_age = some_person.get_age();
 
+    Human another_person(45);   // non constant expression 
+
     return 0;
 }
