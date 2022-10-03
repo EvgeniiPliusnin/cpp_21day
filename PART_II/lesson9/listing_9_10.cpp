@@ -31,8 +31,8 @@ int main(int argc, char const *argv[])
     only_president.set_name("Abraham Lincoln");
 
     cout << "The name of the President is: ";
-    // cout << President::get_instance().get_name() << endl;
-    cout << only_president.get_name() << endl;    
+    cout << President::get_instance().get_name() << endl;
+    // cout << only_president.get_name() << endl;    
 
     return 0;
 }
