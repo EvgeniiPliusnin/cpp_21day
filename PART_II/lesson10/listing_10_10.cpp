@@ -21,7 +21,7 @@ class Bird {
         }
 };
 
-class Platupys : public Mammal, public Bird, public Reptile {
+class Platupys final : public Mammal, public Bird, public Reptile {
     public:
         void swim() {
             std::cout << "Platupys: Voily, I can swim!" << std::endl;
