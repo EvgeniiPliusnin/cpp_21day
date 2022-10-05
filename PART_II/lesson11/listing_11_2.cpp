@@ -30,11 +30,11 @@ void make_fish_swim(Fish& fish) {
 
 int main(int argc, char const *argv[])
 {
-    Tuna tuna;
-    Carp carp;
+    Tuna lunch;
+    Carp dinner;
 
-    make_fish_swim(tuna);
-    make_fish_swim(carp);
+    make_fish_swim(lunch);
+    make_fish_swim(dinner);
 
     return 0;
 }
