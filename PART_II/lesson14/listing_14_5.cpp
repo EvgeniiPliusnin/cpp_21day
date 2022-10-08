@@ -19,6 +19,7 @@ template<> class HoldsPair<int, int> {
     private:
         int value1;
         int value2;
+        std::string str_fun;
 
     public:
         HoldsPair(const int& val1, const int& val2) : value1(val1), value2(val2) {}
@@ -32,6 +33,11 @@ template<> class HoldsPair<int, int> {
         const int& get_second_value() const {
             std::cout << "returning integer " << value2 << std::endl;
             return value2;
+        }
+
+        const std::string& get_string() const {
+            std::cout << "returning string " <<str_fun << std::endl;
+            return str_fun;
         }
 };
 
@@ -60,10 +66,12 @@ int main(int argc, char const *argv[])
     HoldsPair<int, int> pair_int_int(222, 333); 
     pair_int_int.get_first_value();
     pair_int_int.get_second_value();
+    pair_int_int.get_string();
 
     HoldsPair<double, double> pair_db_db(123.01, 1259.07);
     pair_db_db.get_first_value();
     pair_db_db.get_second_value();
+    // pair_db_db.get_string(); // compile failure
 
     return 0;
 }
